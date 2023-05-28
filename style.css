@@ -172,16 +172,13 @@ body {
     color: #fff;
 }
 
-main {
-    padding: 0 7em;
-}
-
-
 .header-intro {
     width: 100%;
     height: 45em;
     display: flex;
     justify-content: space-between;
+    padding: 0 7em;
+    margin-bottom: 2em;
 }
 
 .intro-texto {
@@ -251,6 +248,122 @@ main {
     -moz-box-shadow: 1px 7px 17px 5px rgba(255, 0, 0, 0.75);
 }
 
+.nuvem {
+    position: fixed;
+    z-index: -9;
+    width: 100%;
+}
+
+
+.nuvem1 {
+    bottom: 14em;
+    right: 58em;
+    width: 65%;
+}
+
+.nuvem2 {
+    bottom: 5em;
+    left: 37em;
+    width: 91%;
+    z-index: -8;
+}
+
+.nuvem3 {
+    bottom: -26em;
+    left: 34em;
+    width: 86%;
+    z-index: -9;
+}
+
+.sobre{
+    background-color: #000;
+    height: 40em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lua{
+    /* background-color: gray; */
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.lua img{
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.para-voce{
+    height: 100%;
+    width: 75em;
+    padding-top: 5em;
+    border: 1px solid var(--base-red);
+}
+
+.para-voce_titulo{
+    text-align: center;
+}
+
+.para-voce_titulo h2{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.align-para{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.content-grid {
+    display: grid;
+    grid-template-areas:
+        "icone titulo"
+        ". texto ";
+    grid-template-columns: 2em 1fr;
+    width: 40em;
+    margin-top: 3.5em;
+    grid-column-gap: 15px;
+}
+
+.para-icon {
+    grid-area: icone;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.para-icon img{
+    width: 2em;
+}
+
+.para-title {
+    grid-area: titulo;
+    color: var(--base-red);
+    height: 2em;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 23px;
+    width: 9em;
+}
+
+.para-text {
+    grid-area: texto;
+    color: #3D4145;
+    font-size: 15px;
+    text-align: left;
+    width: 435px;
+    word-break: break-all;
+}
+
+
 
 /* Dispositivos móveis */
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -268,10 +381,13 @@ main {
         width: 80%;
         height: 100%;
         object-fit: cover;
+        z-index: -5; 
     }
-    .intro-texto{
+
+    .intro-texto {
         text-align: center;
         display: block;
+        width: 23.5em;
     }
 
     .intro-texto h1 {
@@ -279,9 +395,53 @@ main {
         font-weight: 700;
     }
 
-    .intro-texto p{
-        font-size: 13px;
+    .intro-texto p {
+        font-size: 12px;
     }
+
+    .intro-texto button {
+        width: 24em;
+    }
+
+    .backgroundSpace {
+        width: 290%;
+        right: 24em;
+    }
+
+
+    .nuvem1 {
+        bottom: 21em;
+        right: 5em;
+        width: 116%;
+    }
+
+    .nuvem2 {
+        bottom: -4em;
+        left: 7em;
+        width: 91%;
+        z-index: -8;
+    }
+
+    .nuvem3 {
+       display: none;
+    }
+
+
+    .lua{
+
+        width: 10%;
+        align-items: end;
+    }
+    .lua img{
+        max-height: 20%;
+    }
+
+    
+    .para-voce{
+      
+        width: 90%;
+    }
+
 }
 
 
@@ -301,19 +461,49 @@ main {
         height: 100%;
         object-fit: cover;
     }
-    .intro-texto{
+
+    .intro-texto {
         text-align: center;
         width: 25em;
         display: block;
     }
+
     .intro-texto h1 {
         font-size: 2.5rem;
         font-weight: 700;
     }
 
-    .intro-texto p{
+    .intro-texto p {
         font-size: 15px;
     }
+
+
+    .intro-texto button {
+        width: 25em;
+    }
+
+    .backgroundSpace {
+        width: 290%;
+        right: 24em;
+    }
+
+    
+    .lua{
+
+        width: 10%;
+        align-items: end;
+    }
+    .lua img{
+        max-height: 30%;
+    }
+
+    
+    .para-voce{
+      
+        width: 90%;
+    }
+
+
 }
 
 
@@ -335,15 +525,38 @@ main {
         object-fit: cover;
     }
 
-    .intro-texto{
+    .intro-texto {
         text-align: center;
         display: block;
     }
+
+    .backgroundSpace {
+        width: 200%;
+    }
+
+    .lua{
+
+        width: 10%;
+        align-items: end;
+    }
+    .lua img{
+        max-height: 40%;
+    }
+
+    
+    .para-voce{
+      
+        width: 90%;
+    }
+
+
 }
 
 /* Telas pequenas, laptops */
 @media screen and (min-width: 991px) and (max-width: 1024px) {
     .intro-foguete {}
+
+ 
 }
 
 /* Desktops, telas grandes */
