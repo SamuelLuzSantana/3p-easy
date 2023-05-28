@@ -143,25 +143,23 @@ q:after {
 }
 
 
-html::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #303030;
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #303030;
 }
 
-html::-webkit-scrollbar
-{
-	width: 8px;
-	background-color: #303030;
+html::-webkit-scrollbar {
+    width: 8px;
+    background-color: #303030;
 }
 
-html::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #D62929;
+html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #D62929;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -184,14 +182,16 @@ main {
     height: 45em;
     display: flex;
     justify-content: space-between;
-    overflow-y: hidden;
 }
 
 .intro-texto {
-    width: 50em;
+    width: 35em;
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .intro-texto h1 {
@@ -208,28 +208,37 @@ main {
     color: var(--base-red);
 }
 
-.aling-texto {
-    margin: 12rem 0;
+.backgroundSpace {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100%;
+    opacity: 0.4;
 }
 
 .intro-foguete {
-    top: 0;
-    position: fixed;
-    z-index: -4;
-    opacity: 0.5;
+    height: 100%;
+    width: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .intro-foguete img {
-    width: 75em;
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
 }
 
-.aling-texto button {
+.intro-texto button {
     background: rgb(255, 0, 0);
     background: linear-gradient(121deg, rgba(255, 0, 0, 1) 30%, rgba(238, 68, 15, 1) 100%);
     height: 4em;
     width: 32em;
     margin-top: 2em;
-    border-radius: 18px;
+    border-radius: 8px;
     color: #fff;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -237,41 +246,112 @@ main {
     cursor: pointer;
 }
 
-.aling-texto button:hover {
-    -webkit-box-shadow: -7px 21px 16px 6px rgba(255, 0, 0, 0.75);
-    -moz-box-shadow: -7px 21px 16px 6px rgba(255, 0, 0, 0.75);
+.intro-texto button:hover {
+    -webkit-box-shadow: 1px 7px 17px 5px rgba(255, 0, 0, 0.75);
+    -moz-box-shadow: 1px 7px 17px 5px rgba(255, 0, 0, 0.75);
 }
 
 
+/* Dispositivos móveis */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .header-intro {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 15em;
+    }
 
-/* Hasta 480px de ancho (teléfonos pequeños y antiguos) */
-@media (max-width: 480px) {
-    /* Estilos específicos para dispositivos móviles */
-}
-
-/* De 481px a 767px de ancho (teléfonos más grandes y pequeñas tabletas) */
-@media (min-width: 481px) and (max-width: 767px) {
-    /* Estilos específicos para dispositivos móviles */
-}
-
-
-/* De 768px a 1024px de ancho (tabletas) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    /* Estilos específicos para tabletas */
-}
-
-
-/* De 1025px a 1366px de ancho (monitores de escritorio y laptops) */
-@media (min-width: 1025px) and (max-width: 1366px) {
     .intro-foguete {
-        left: 18em;
+        margin: 5em 0px;
+    }
+
+    .intro-foguete img {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .intro-texto{
+        text-align: center;
+        display: block;
+    }
+
+    .intro-texto h1 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .intro-texto p{
+        font-size: 13px;
     }
 }
 
-/* A partir de 1367px de ancho (monitores grandes y pantallas panorámicas) */
-@media (min-width: 1367px) {
+
+@media screen and (min-width: 481px) and (max-width: 609px) {
+    .header-intro {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 15em;
+    }
 
     .intro-foguete {
-        left: 30em;
+        margin: 5em 0px;
     }
+
+    .intro-foguete img {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .intro-texto{
+        text-align: center;
+        width: 25em;
+        display: block;
+    }
+    .intro-texto h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .intro-texto p{
+        font-size: 15px;
+    }
+}
+
+
+/* iPads, tablets */
+@media screen and (min-width: 610px) and (max-width: 990px) {
+    .header-intro {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 15em;
+    }
+
+    .intro-foguete {
+        margin: 5em 0px;
+    }
+
+    .intro-foguete img {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .intro-texto{
+        text-align: center;
+        display: block;
+    }
+}
+
+/* Telas pequenas, laptops */
+@media screen and (min-width: 991px) and (max-width: 1024px) {
+    .intro-foguete {}
+}
+
+/* Desktops, telas grandes */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .intro-foguete {}
+}
+
+/* Telas muito grandes, TVs */
+@media screen and (min-width: 1201px) {
+    /* Estilos para telas muito grandes e TVs */
 }
