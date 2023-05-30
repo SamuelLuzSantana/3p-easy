@@ -633,7 +633,7 @@ h2 {
     background: rgb(255, 0, 0);
     background: linear-gradient(121deg, rgba(255, 0, 0, 1) 30%, rgba(238, 68, 15, 1) 100%);
     height: 4em;
-    width: 32em;
+    width: 25em;
     margin-top: 2em;
     border-radius: 8px;
     color: #fff;
@@ -837,6 +837,7 @@ h2 {
     .sobre-nos {
         flex-direction: column-reverse;
         height: 51em;
+        align-items: center;
     }
 
     .sobre-nos_img {
@@ -850,7 +851,7 @@ h2 {
         height: 100%;
         width: 22em;
         position: relative;
-        left: 3em;
+        left: 0em;
     }
 
     .aling-sobre-textos {
@@ -883,7 +884,7 @@ h2 {
 
     .aling-explore h3 {
         text-align: center;
-        font-size: 2em;
+        font-size: 1.6em;
     }
 
     .explore {
@@ -892,8 +893,8 @@ h2 {
 
     .aling-explore p {
         margin-top: 2em;
-        font-size: 14px;
-        width: 26em;
+        font-size: 12px;
+        width: 27em;
     }
 
 }
@@ -1097,6 +1098,7 @@ h2 {
         height: 100%;
         width: 22em;
         position: relative;
+        left: 0px;
     }
 
     .aling-sobre-textos {
