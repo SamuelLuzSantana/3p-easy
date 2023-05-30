@@ -696,13 +696,14 @@ h2 {
         bottom: 21em;
         right: 5em;
         width: 116%;
+        z-index: -1;
     }
 
     .nuvem2 {
         bottom: -4em;
         left: 7em;
         width: 91%;
-        z-index: -8;
+        z-index: -1;
     }
 
     .nuvem3 {
