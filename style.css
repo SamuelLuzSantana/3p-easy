@@ -603,8 +603,8 @@ h2 {
     width: 100%;
     height: 35.3em;
     position: absolute;
-    background: rgb(0,0,0);
-    background: linear-gradient(-90deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0.6979166666666667) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.6979166666666667) 100%);
 }
 
 
@@ -653,8 +653,10 @@ h2 {
     .header-intro {
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 15em;
+        margin-top: 20em;
+        height: 30em;
     }
+
 
     .intro-foguete {
         margin: 5em 0px;
@@ -687,8 +689,8 @@ h2 {
     }
 
     .backgroundSpace {
-        width: 290%;
-        right: 24em;
+        width: 240%;
+        left: -30em;
     }
 
 
@@ -899,7 +901,16 @@ h2 {
     }
 
     .astronauta img {
-        width: 125%;
+        object-fit: cover;
+        height: 100%;
+        width: 110%;
+        opacity: 0.5;
+    }
+
+    .explore-texto {
+        padding-top: 12em;
+        height: 40em;
+        background: linear-gradient(355deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6979166666666667) 100%);
     }
 
 }
@@ -909,7 +920,13 @@ h2 {
     .header-intro {
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 15em;
+        margin-top: 35em;
+        height: 30em
+    }
+
+    .backgroundSpace {
+        width: 290%;
+        left: -52em;
     }
 
     .intro-foguete {
@@ -942,10 +959,7 @@ h2 {
         width: 25em;
     }
 
-    .backgroundSpace {
-        width: 290%;
-        right: 24em;
-    }
+
 
 
     .lua {
@@ -1118,9 +1132,7 @@ h2 {
         flex-direction: column;
     }
 
-    .explore-texto {
-        padding-top: 12em;
-    }
+
 
     .aling-explore {
         margin: 0px 0px;
@@ -1130,7 +1142,7 @@ h2 {
         align-items: center;
     }
 
- 
+
 
     .aling-explore h3 {
         text-align: center;
@@ -1147,6 +1159,24 @@ h2 {
         width: 26em;
     }
 
+    .astronauta img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+    }
+
+    .explore-texto {
+        padding-top: 12em;
+        height: 40em;
+        background: linear-gradient(355deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6979166666666667) 100%);
+    }
+
+    .astronauta {
+        width: 100%;
+    }
+
+
 
 }
 
@@ -1156,8 +1186,15 @@ h2 {
     .header-intro {
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 15em;
+        margin-top: 35em;
+        height: 30em
     }
+
+    .backgroundSpace {
+        width: 290%;
+        left: -60em;
+    }
+
 
     .intro-foguete {
         margin: 5em 0px;
@@ -1174,9 +1211,7 @@ h2 {
         display: block;
     }
 
-    .backgroundSpace {
-        width: 200%;
-    }
+
 
     .lua {
 
@@ -1257,6 +1292,8 @@ h2 {
         margin-bottom: 2em;
     }
 
+
+
     .mais-sobre_texto {
         width: 22em;
     }
@@ -1280,7 +1317,7 @@ h2 {
     }
 
     .ajudar-top h2 {
-        font-size: 2em; 
+        font-size: 2em;
     }
 
     .ajudar-top p {
@@ -1387,22 +1424,24 @@ h2 {
         width: 26em;
     }
 
+    .astronauta img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+    }
+
+    .astronauta {
+        width: 100%;
+    }
+
+    .explore-texto {
+        padding-top: 12em;
+        height: 40em;
+        background: linear-gradient(355deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6979166666666667) 100%);
+    }
+
 
 }
 
-/* Telas pequenas, laptops */
-@media screen and (min-width: 991px) and (max-width: 1024px) {
-    .intro-foguete {}
 
-
-}
-
-/* Desktops, telas grandes */
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-    .intro-foguete {}
-}
-
-/* Telas muito grandes, TVs */
-@media screen and (min-width: 1201px) {
-    /* Estilos para telas muito grandes e TVs */
-}
