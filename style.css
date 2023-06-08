@@ -852,12 +852,12 @@ h2 {
 
     .sobre-nos {
         flex-direction: column-reverse;
-        height: 50em;
+        height: 60em;
         align-items: center;
     }
 
     .sobre-nos_img {
-        height: 17em;
+        height:30em;
         position: relative;
         top: -4em;
         left: -1.5em;
